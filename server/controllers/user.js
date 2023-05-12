@@ -1,6 +1,7 @@
 import { User } from "../models/users.js"
 import bcrypt from "bcrypt"
 import { sendCookie } from "../utils/features.js"
+import ErrorHandler from "../middlewares/error.js"
 
 export const getMyProfile = (req,res)=>{
     try {
